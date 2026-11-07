@@ -1,0 +1,15 @@
+# Anonymous usage counters: each path below shows up as a page hit in Netlify's analytics.
+[[redirects]]
+  from = "/get/guide"
+  to = "/Own-Your-Impact-Guide.pdf"
+  status = 302
+
+[[redirects]]
+  from = "/get/folder"
+  to = "/My-Career-Brain.zip"
+  status = 302
+
+[[redirects]]
+  from = "/t/*"
+  to = "/t.txt"
+  status = 200

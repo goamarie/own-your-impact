@@ -199,7 +199,7 @@ Why employers worry that AI systems can retain or reproduce proprietary informat
 
 F["08-prompts/00-fast-track.md"] = """# Fast Track: Own Your Impact in 1 Hour
 
-Before you paste: in Claude's settings, turn on Search and reference chats and your connectors (email, Slack or Teams, files, calendar). Step 2 searches them for you; without them, it falls back to recall only.
+Before you paste: in Claude's settings, turn on Search and reference chats and your connectors (email, Slack or Teams, files, calendar). Step 2 searches them for you. Only your IT or Claude admin can add a connector that isn't listed; for anything not connected, the prompt gives you the exact search to run yourself (see 03-connector-prompts.md).
 
 Paste into a new chat. Best in your company's approved AI; it also works in a personal AI with nonconfidential information only.
 
@@ -215,19 +215,20 @@ Run this in order. Ask one question at a time, keep me moving, and tell me which
 
 1. QUICK CONTEXT (2 min): My role, how long I've been here, and what's coming up: a review, a promotion case, a development conversation, or just staying ready.
 
-2. DIG FIRST (10 min): Before you ask me to remember anything, search everything you can reach and show me what you found.
-   a) Our past chats and your memory of me: projects, launches, problems, drafts, and wins I've already talked through with you.
-   b) My connected tools, one at a time: email (thank-yous, kudos, launch announcements, recaps I sent), Slack or Teams (shoutouts, wins channels, posts where I announced work), files (docs and decks I authored), and calendar (meetings I ran, presentations, workshops, exec reviews).
-   List each find with its date, source, and what it suggests I did. Tell me which sources you searched and which you couldn't reach. If you can't search anything, say so in one line and go straight to recall.
+2. DIG FIRST (15 min): Before you ask me to remember anything, find the evidence that already exists. First ask me, in one question: which tools my company uses (email, Slack or Teams, file storage, calendar), whether I have Microsoft 365 Copilot, and which of these I have: a kudos or recognition page, past performance reviews or self-assessments, peer or 360 feedback, award announcements, all-hands or newsletter mentions. Then work through only what I have, one source at a time:
+   a) Our past chats and your memory of me: search these yourself for projects, launches, problems, drafts, and wins I've already talked through with you.
+   b) Each tool I use. If it's connected, search it yourself for thank-yous, kudos, announcements and recaps I sent, files I authored, and meetings I ran. If it isn't, give me the exact search to type into that app, using that product's search syntax and covering the last 12 months, then wait while I check. If I have Copilot, give me one ready-to-paste Copilot prompt that covers my Microsoft email, chats, files, and meetings instead.
+   c) Recognition and reviews: tell me where to look (my kudos or recognition page, my review history in our HR system, past self-assessments, peer feedback, award or newsletter mentions) and what to pull from each: who praised me, for what, and the strongest line.
+   When I check something myself, I'll tell you what I found in my own words. In a personal AI, never ask me to paste the messages or documents themselves. List each find with its date, source, and what it suggests I did. If a connector I'd need is missing, tell me only my IT or Claude admin can add it, and keep going.
 
-3. RAPID RECALL (15 min): Start from what you found: ask me about each find, then use these four triggers to fill the gaps:
+3. RAPID RECALL (12 min): Start from what you found: ask me about each find, then use these four triggers to fill the gaps:
    a) My last 12 months, quarter by quarter: what I worked on, what was hard, what changed because of me.
    b) Problems I solved: escalations, broken processes, deadlines I rescued.
    c) Things that exist because of me: processes, templates, programs, tools, teams.
    d) Who thanked me, and for what.
    When I say "it was just..." or "everyone does that," push back and dig for the impact. Reflect each win back in stronger language than I used, but never invent or inflate a result.
 
-4. FIND THE VALUE AND THE EVIDENCE (15 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
+4. FIND THE VALUE AND THE EVIDENCE (13 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
 
 5. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome / Business value / Evidence and where it's verified.
 
@@ -336,6 +337,54 @@ First, turn on Search and reference chats and your connectors in Claude's settin
 - FIGMA: List the Figma files and projects I designed or contributed to since [start date], with dates, what each was for, and any approvals or feedback in comments. Don't copy or export designs; write a short description of each for my portfolio log.
 - COPILOT: Find all emails and Teams messages since [start date] where someone thanked me, praised my work, or gave me credit. Summarize each with date, sender, and what it was about.
 - OTHER SYSTEMS: Here's what I gathered from [system name]. Add it to my Internal Impact Record as entries: what it is, what it proves, which skill it shows, and a Problem / Baseline / Contribution / Outcome / Value bullet if there's enough detail. Then draft the personal version, flagging anything that may be confidential (keep, generalize, or drop?), and tell me what evidence seems to be missing.
+
+
+## No connector? Search it yourself
+
+Run these in each app, scan the results, and tell Claude what you found in your own words. Set any date filter to the past 12 months.
+
+**Gmail**
+- Praise: `to:me (thanks OR "thank you" OR kudos OR "great job" OR shoutout) newer_than:1y`
+- What you shipped: `from:me (launch OR launched OR recap OR kickoff OR announcing) newer_than:1y`
+
+**Outlook**
+- Praise: search `thanks OR kudos OR "great job" OR shoutout`, then use **Filters** to set the date range.
+- What you shipped: open **Sent Items** and search `launch OR recap OR kickoff OR announcing`.
+
+**Slack**
+- Open **Activity → Mentions** and scroll back through the year.
+- Search `thanks` plus your first name, and set the date filter.
+- Search `from:@me in:#your-wins-channel` (use your team's kudos or wins channel).
+
+**Microsoft Teams**
+- Search `thanks`, `kudos`, or `great job`, then filter to Messages and set the date.
+- Look for **Praise** badges people sent you.
+
+**Google Drive**
+- `owner:me type:document` (repeat with `type:presentation` and `type:spreadsheet`), then sort by last modified.
+
+**SharePoint or OneDrive**
+- In OneDrive, open **My files** and sort by Modified.
+- In Microsoft 365 search, type `author:"Your Full Name"`.
+
+**Calendar (Google or Outlook)**
+- Search `review`, `readout`, `workshop`, `kickoff`, `QBR`, `training`, and `demo`. Note the meetings you organized or presented in.
+
+**Microsoft 365 Copilot (paste this)**
+```
+Find emails, Teams messages, meetings, and files from the past 12 months where someone thanked me, praised my work, or credited me, plus documents and presentations I authored and meetings I organized or presented in. List each with date, source, a one-line summary, and a link.
+```
+
+## Recognition and reviews
+
+These often hold your best proof, in other people's words.
+- **Kudos or recognition page:** your company's intranet kudos wall or a recognition tool (such as Bonusly, Achievers, Workday, or Viva). Export or screenshot your received kudos.
+- **Performance reviews:** your review history in your HR system (such as Workday, Lattice, or Culture Amp). Pull your manager's strongest lines and your ratings, where you're allowed to keep them.
+- **Self-assessments:** your past ones are a ready-made list of wins.
+- **Peer and 360 feedback:** who praised you, and for what.
+- **Awards, all-hands, and newsletters:** any time you or your team were named.
+
+Detailed copies stay in your work systems. Your personal record gets your own summary.
 """
 
 F["08-prompts/04-recall-and-two-records.md"] = """# Recall, Check-ins, and the Two-Record Step

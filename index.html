@@ -187,16 +187,39 @@
   .polas{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:48px 0 0}
   .pola-frame{background:var(--paper-raised);padding:12px 12px 14px;box-shadow:0 1px 0 rgba(42,31,26,0.06),0 12px 28px -16px rgba(42,31,26,0.35)}
   .pola:nth-child(1) .pola-frame{transform:rotate(-2deg)} .pola:nth-child(2) .pola-frame{transform:rotate(1.5deg)} .pola:nth-child(3) .pola-frame{transform:rotate(-1deg)}
-  .pola-photo{aspect-ratio:1/1}
+  .pola-photo{aspect-ratio:5/4;display:flex;align-items:center;justify-content:center;padding:18px}
+  .bubble{position:relative;display:inline-block;max-width:90%;text-align:center;background:var(--paper-raised);border:1.5px solid var(--ds-ink);border-radius:22px;padding:10px 16px 12px;font-size:25px;line-height:28px;box-shadow:var(--shadow-sticker)}
+  .bubble::after{content:"";position:absolute;left:26px;bottom:-11px;width:16px;height:16px;background:var(--paper-raised);border-right:1.5px solid var(--ds-ink);border-bottom:1.5px solid var(--ds-ink);transform:rotate(45deg) skew(8deg,8deg)}
   .ph1{background:radial-gradient(70% 70% at 30% 30%,var(--glow-peach),transparent 70%),radial-gradient(60% 60% at 75% 75%,var(--glow-pink),transparent 70%),var(--paper)}
   .ph2{background:radial-gradient(70% 70% at 70% 30%,var(--glow-aqua),transparent 70%),radial-gradient(60% 60% at 25% 75%,var(--glow-peach),transparent 70%),var(--paper)}
   .ph3{background:radial-gradient(70% 70% at 50% 40%,var(--glow-pink),transparent 70%),radial-gradient(60% 60% at 30% 85%,var(--glow-aqua),transparent 70%),var(--paper)}
-  .pola-cap{display:block;text-align:center;margin-top:10px}
+  .pola-cap{display:block;text-align:center;margin-top:12px;color:var(--ds-ink)}
   .pola p{font-family:var(--font-sans);font-size:15px;line-height:24px;color:var(--ink-muted);margin:20px 4px 0}
   .pola p strong{color:var(--ds-ink)}
   .ds-btns{display:flex;flex-wrap:wrap;gap:16px;margin:48px 0 0}
   .ds-btn small{font-weight:400;opacity:.8;margin-left:8px}
   @media (max-width:720px){ .polas{grid-template-columns:1fr;max-width:340px} }
+
+  /* ===== Where it lives (simplified flow) ===== */
+  .flow-wrap{margin:72px 0 0}
+  .flow-wrap .ds-h3{margin:0 0 6px}
+  .flow{display:grid;grid-template-columns:1fr 92px 1fr 92px 1fr;align-items:stretch;margin:28px 0 0}
+  .flow-card{background:var(--paper-raised);border-radius:var(--radius-md);padding:20px 20px 22px;box-shadow:0 1px 0 rgba(42,31,26,0.06),0 12px 28px -16px rgba(42,31,26,0.35)}
+  .flow-work{border:1.5px dashed var(--ink-muted)}
+  .flow-you{border:1.5px solid var(--ds-ink)}
+  .flow-keep{border:2px solid var(--rust)}
+  .flow-card h4{font-family:var(--font-display);font-variation-settings:"SOFT" 100;font-weight:600;font-size:20px;line-height:26px;color:var(--ds-ink);margin:8px 0 8px}
+  .flow-card p{font-family:var(--font-sans);font-size:15px;line-height:23px;color:var(--ink-muted);margin:0}
+  .flow-arrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+  .flow-arrow svg{width:52px;height:20px;overflow:visible}
+  .flow-arrow path{fill:none;stroke:var(--pen);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .flow-arrow .ds-label{text-align:center;font-size:11px;line-height:14px;color:var(--pen)}
+  .flow-note{margin:20px 0 0}
+  @media (max-width:820px){
+    .flow{grid-template-columns:1fr;max-width:420px}
+    .flow-arrow{flex-direction:row;padding:10px 0}
+    .flow-arrow svg{transform:rotate(90deg);width:36px}
+  }
 
   /* ===== Respect the information ===== */
   .plain-card{background:var(--paper-raised);border:1px solid var(--paper-line);border-radius:var(--radius-md);padding:32px}
@@ -359,17 +382,41 @@ Run this in order. Ask one question at a time, keep me moving, and tell me which
     <p class="ds-sub">Level 4, every week. About 5 hours to set up on your own schedule, then about 30 minutes a week. The agent does the digging.</p>
     <div class="polas">
       <div class="pola">
-        <div class="pola-frame"><div class="pola-photo ph1" aria-hidden="true"></div><span class="ds-hand pola-cap" aria-hidden="true">remember</span></div>
+        <div class="pola-frame"><div class="pola-photo ph1"><span class="bubble ds-hand">wait, I did that?</span></div><span class="ds-label pola-cap">1 · remember</span></div>
         <p><strong>Remember.</strong> A deep recall exercise across 2–3 sittings brings back the wins you forgot.</p>
       </div>
       <div class="pola">
-        <div class="pola-frame"><div class="pola-photo ph2" aria-hidden="true"></div><span class="ds-hand pola-cap" aria-hidden="true">collect</span></div>
+        <div class="pola-frame"><div class="pola-photo ph2"><span class="bubble ds-hand">found a win I forgot</span></div><span class="ds-label pola-cap">2 · collect</span></div>
         <p><strong>Collect.</strong> Every Friday your work Claude scans your tools and drafts two versions of your wins: detailed for work, personal for you.</p>
       </div>
       <div class="pola">
-        <div class="pola-frame"><div class="pola-photo ph3" aria-hidden="true"></div><span class="ds-hand pola-cap" aria-hidden="true">keep</span></div>
-        <p><strong>Keep.</strong> You review a few flags and save the personal version to your career brain. Your personal Claude puts it to work.</p>
+        <div class="pola-frame"><div class="pola-photo ph3"><span class="bubble ds-hand">review tomorrow? ready.</span></div><span class="ds-label pola-cap">3 · keep it personal</span></div>
+        <p><strong>Keep.</strong> The personal version, in your own words with nothing confidential, goes to your career brain: a folder you own. Your personal Claude puts it to work.</p>
       </div>
+    </div>
+    <div class="flow-wrap">
+      <h3 class="ds-h3">Where everything lives</h3>
+      <p class="ds-sub">Two records, two homes. The agent does the drafting; you make the call on what you keep.</p>
+      <div class="flow" role="list">
+        <div class="flow-card flow-work" role="listitem">
+          <span class="ds-label">Stays at work</span>
+          <h4>Internal Impact Record</h4>
+          <p>Your work Claude scans your tools every Friday and drafts two versions of your wins. The detailed one, with exact metrics, names, and proof, stays in approved work systems.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 52 20" aria-hidden="true"><path d="M2 11 C 14 8, 30 13, 46 10"/><path d="M39 4 L 47 10 L 39 16"/></svg><span class="ds-label">two versions</span></div>
+        <div class="flow-card flow-you" role="listitem">
+          <span class="ds-label">You, about 2 minutes</span>
+          <h4>Review the flags</h4>
+          <p>The agent flags anything that might be confidential. For each one: keep, generalize, or drop.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 52 20" aria-hidden="true"><path d="M2 11 C 14 8, 30 13, 46 10"/><path d="M39 4 L 47 10 L 39 16"/></svg><span class="ds-label">personal version</span></div>
+        <div class="flow-card flow-keep" role="listitem">
+          <span class="ds-label">Ready when you need it</span>
+          <h4>Personal Career Record</h4>
+          <p>Your career brain: a folder you own, in your own words. Walk into every review, promotion talk, or new opportunity with your wins already written, and let your personal Claude turn them into self-assessments, resumes, and interview stories in minutes.</p>
+        </div>
+      </div>
+      <p class="ds-fine flow-note">Only the personal version crosses over, and nothing confidential goes with it. The guide has the full diagram and a save map for every file.</p>
     </div>
     <div class="ds-btns">
       <a class="ds-btn ds-btn-primary" href="/get/guide">Download the free guide <small>PDF</small></a>

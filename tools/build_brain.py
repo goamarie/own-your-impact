@@ -199,6 +199,8 @@ Why employers worry that AI systems can retain or reproduce proprietary informat
 
 F["08-prompts/00-fast-track.md"] = """# Fast Track: Own Your Impact in 1 Hour
 
+Before you paste: in Claude's settings, turn on Search and reference chats and your connectors (email, Slack or Teams, files, calendar). Step 2 searches them for you; without them, it falls back to recall only.
+
 Paste into a new chat. Best in your company's approved AI; it also works in a personal AI with nonconfidential information only.
 
 ```
@@ -207,26 +209,31 @@ You are my career portfolio coach. I have one hour. Help me recognize my best wo
 
 FIRST, ASK: Am I using an AI tool my employer has approved for work information, or a personal AI?
 - Employer-approved: you may use work information and my connected tools, following my company's policies.
-- Personal AI: use only public, nonconfidential, or authorized information. Never ask me to paste internal documents. Help me recall and structure my work, and point me to the approved places where evidence lives.
+- Personal AI: use only public, nonconfidential, or authorized information. Never ask me to paste internal documents. You may search our past chats and your memory of me, but never work tools. Help me recall and structure my work, and point me to the approved places where evidence lives.
 
 Run this in order. Ask one question at a time, keep me moving, and tell me which step we're on.
 
 1. QUICK CONTEXT (2 min): My role, how long I've been here, and what's coming up: a review, a promotion case, a development conversation, or just staying ready.
 
-2. RAPID RECALL (25 min): Walk me through four triggers:
+2. DIG FIRST (10 min): Before you ask me to remember anything, search everything you can reach and show me what you found.
+   a) Our past chats and your memory of me: projects, launches, problems, drafts, and wins I've already talked through with you.
+   b) My connected tools, one at a time: email (thank-yous, kudos, launch announcements, recaps I sent), Slack or Teams (shoutouts, wins channels, posts where I announced work), files (docs and decks I authored), and calendar (meetings I ran, presentations, workshops, exec reviews).
+   List each find with its date, source, and what it suggests I did. Tell me which sources you searched and which you couldn't reach. If you can't search anything, say so in one line and go straight to recall.
+
+3. RAPID RECALL (15 min): Start from what you found: ask me about each find, then use these four triggers to fill the gaps:
    a) My last 12 months, quarter by quarter: what I worked on, what was hard, what changed because of me.
    b) Problems I solved: escalations, broken processes, deadlines I rescued.
    c) Things that exist because of me: processes, templates, programs, tools, teams.
    d) Who thanked me, and for what.
    When I say "it was just..." or "everyone does that," push back and dig for the impact. Reflect each win back in stronger language than I used, but never invent or inflate a result.
 
-3. FIND THE VALUE AND THE EVIDENCE (15 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Tell me where evidence most likely lives and how to verify it through approved channels. In an approved tool, search my connected sources and show me what you found before using it.
+4. FIND THE VALUE AND THE EVIDENCE (15 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
 
-4. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome / Business value / Evidence and where it's verified.
+5. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome / Business value / Evidence and where it's verified.
 
-5. BLIND SPOT (5 min): Answer "What is one thing about me I don't see, but need to know?" using only what I told you and what you found: one strength I underrate and one pattern to watch, each with the evidence. Be direct and kind.
+6. BLIND SPOT (5 min): Answer "What is one thing about me I don't see, but need to know?" using only what I told you and what you found: one strength I underrate and one pattern to watch, each with the evidence. Be direct and kind.
 
-6. TWO RECORDS (3 min): Give me two versions. INTERNAL (impact-internal-YYYY-MM-DD.md): the full detail, for my approved work systems. PERSONAL (impact-personal-YYYY-MM-DD.md): my skills, growth, Blind Spot, and accomplishment summaries with no confidential details, no customer names, and no nonpublic numbers. Rounded or anonymized figures can still be confidential, so flag anything you're unsure about and ask me: keep, generalize, or drop? Then name the 3 pieces of missing evidence I should request through approved channels this week.
+7. TWO RECORDS (3 min): Give me two versions. INTERNAL (impact-internal-YYYY-MM-DD.md): the full detail, for my approved work systems. PERSONAL (impact-personal-YYYY-MM-DD.md): my skills, growth, Blind Spot, and accomplishment summaries with no confidential details, no customer names, and no nonpublic numbers. Rounded or anonymized figures can still be confidential, so flag anything you're unsure about and ask me: keep, generalize, or drop? Then name the 3 pieces of missing evidence I should request through approved channels this week.
 ```
 
 Keep the internal version in your work Project. Save the personal version here, at the top of 01-portfolio-log.md.
@@ -291,6 +298,7 @@ Set up a scheduled task called "Weekly Portfolio Collector" that runs every Frid
 
 TASK PROMPT:
 You are my Weekly Portfolio Collector. Each run, search my connected tools for the past 7 days and find evidence of my work and impact:
+- Past chats and your memory: work I discussed with you this week, such as projects, launches, problems I solved, and drafts.
 - Email: messages thanking, praising, or crediting me; deliverables, recaps, and announcements I sent.
 - Slack/Teams: mentions of me, kudos or wins posts that include me, and my posts announcing work I delivered.
 - SharePoint/OneDrive: documents and decks I created or substantially edited.
@@ -315,6 +323,10 @@ If scheduled tasks aren't available, paste the TASK PROMPT manually every Friday
 F["08-prompts/03-connector-prompts.md"] = """# Connector Prompts (work Claude)
 
 Run these in your company's approved AI. Replace [start date] with your start date.
+
+First, turn on Search and reference chats and your connectors in Claude's settings.
+
+- PAST CHATS: Search our past chats and your memory of me from [start date] to today for projects, launches, problems I solved, and drafts I worked on with you. List each with date, a one-line summary, and what it proves about my work.
 
 - EMAIL: Search my email from [start date] to today for messages where people thanked me, praised my work, or credited me. List each with date, sender, a one-line summary, and what it proves about my work.
 - EMAIL: Search my sent mail from [start date] to today for project kickoffs, launch announcements, recaps, and deliverables I sent. Group them by project and give me a timeline.

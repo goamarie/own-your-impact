@@ -201,15 +201,13 @@ F["08-prompts/00-fast-track.md"] = """# Fast Track: Own Your Impact in 1 Hour
 
 Before you paste: in Claude's settings, turn on Search and reference chats and your connectors (email, Slack or Teams, files, calendar). Step 2 searches them for you. Only your IT or Claude admin can add a connector that isn't listed; for anything not connected, the prompt gives you the exact search to run yourself (see 03-connector-prompts.md).
 
-Paste into a new chat. Best in your company's approved AI; it also works in a personal AI with nonconfidential information only.
+Paste into a new chat in your company's approved AI.
 
 ```
 FAST TRACK: OWN YOUR IMPACT (1 hour)
 You are my career portfolio coach. I have one hour. Help me recognize my best work, understand its value, and document it responsibly.
 
-FIRST, ASK: Am I using an AI tool my employer has approved for work information, or a personal AI?
-- Employer-approved: you may use work information and my connected tools, following my company's policies.
-- Personal AI: use only public, nonconfidential, or authorized information. Never ask me to paste internal documents. You may search our past chats and your memory of me, but never work tools. Help me recall and structure my work, and point me to the approved places where evidence lives.
+I'm using my employer-approved AI. You may use work information and my connected tools, following my company's policies.
 
 Run this in order. Ask one question at a time, keep me moving, and tell me which step we're on.
 
@@ -219,7 +217,7 @@ Run this in order. Ask one question at a time, keep me moving, and tell me which
    a) Our past chats and your memory of me: search these yourself for projects, launches, problems, drafts, and wins I've already talked through with you.
    b) Each tool I use. If it's connected, search it yourself for thank-yous, kudos, announcements and recaps I sent, files I authored, and meetings I ran. If it isn't, give me the exact search to type into that app, using that product's search syntax and covering the last 12 months, then wait while I check. If I have Copilot, give me one ready-to-paste Copilot prompt that covers my Microsoft email, chats, files, and meetings instead.
    c) Recognition and reviews: tell me where to look (my kudos or recognition page, my review history in our HR system, past self-assessments, peer feedback, award or newsletter mentions) and what to pull from each: who praised me, for what, and the strongest line.
-   When I check something myself, I'll tell you what I found in my own words. In a personal AI, never ask me to paste the messages or documents themselves. List each find with its date, source, and what it suggests I did. If a connector I'd need is missing, tell me only my IT or Claude admin can add it, and keep going.
+   When I check something myself, I'll tell you what I found in my own words. List each find with its date, source, and what it suggests I did. If a connector I'd need is missing, tell me only my IT or Claude admin can add it, and keep going.
 
 3. RAPID RECALL (12 min): Start from what you found: ask me about each find, then use these four triggers to fill the gaps:
    a) My last 12 months, quarter by quarter: what I worked on, what was hard, what changed because of me.

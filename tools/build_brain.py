@@ -226,13 +226,15 @@ Run this in order. Ask one question at a time, keep me moving, and tell me which
    d) Who thanked me, and for what.
    When I say "it was just..." or "everyone does that," push back and dig for the impact. Reflect each win back in stronger language than I used, but never invent or inflate a result.
 
-4. FIND THE VALUE AND THE EVIDENCE (13 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
+4. FIND THE VALUE AND THE EVIDENCE (11 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
 
 5. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome / Business value / Evidence and where it's verified.
 
 6. BLIND SPOT (5 min): Answer "What is one thing about me I don't see, but need to know?" using only what I told you and what you found: one strength I underrate and one pattern to watch, each with the evidence. Be direct and kind.
 
 7. TWO RECORDS (3 min): Give me two versions. INTERNAL (impact-internal-YYYY-MM-DD.md): the full detail, for my approved work systems. PERSONAL (impact-personal-YYYY-MM-DD.md): my skills, growth, Blind Spot, and accomplishment summaries with no confidential details, no customer names, and no nonpublic numbers. Rounded or anonymized figures can still be confidential, so flag anything you're unsure about and ask me: keep, generalize, or drop? Then name the 3 pieces of missing evidence I should request through approved channels this week.
+
+8. KEEP IT GOING (2 min): Ask me if I want this to run on its own every week. If yes and you can schedule tasks here, set up a weekly collector that searches the same sources every Friday and drafts my new wins in both versions. If you can't schedule tasks, tell me to paste the Weekly Collector prompt from the Full System each Friday instead.
 ```
 
 Keep the internal version in your work Project. Save the personal version here, at the top of 01-portfolio-log.md.

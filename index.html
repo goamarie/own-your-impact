@@ -148,6 +148,13 @@
   @media (prefers-reduced-motion: reduce){ .peel{transition:none} .peel:hover{transform:rotate(2deg)} }
   @media (max-width:640px){ .peel{transform:none} .peel:hover{transform:none} }
 
+  /* ===== Pick your path heading row ===== */
+  .ds-first{padding-top:72px}
+  .path-head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin:0 0 48px}
+  .path-head .ds-h2{margin:0}
+  .path-head .peel{margin:0}
+  @media (max-width:720px){ .ds-first{padding-top:48px} .path-head{flex-direction:column;align-items:flex-start;gap:20px;margin-bottom:32px} }
+
   /* ===== Four levels ===== */
   .ruled{position:relative;background:var(--paper-raised);border:1px solid var(--paper-line);border-radius:var(--radius-md);box-shadow:0 1px 0 rgba(42,31,26,0.06),0 12px 28px -16px rgba(42,31,26,0.35);padding:8px 24px;margin:32px 0 0}
   .levels{width:100%;border-collapse:collapse;font-family:var(--font-sans);font-size:15px;line-height:24px;color:var(--ds-ink)}
@@ -253,7 +260,7 @@
   @media (max-width:860px){ .reads{grid-template-columns:1fr} }
 
   /* ===== Feedback ===== */
-  .fb{position:relative;isolation:isolate;padding:96px 0 0;border-top:0}
+  .fb{position:relative;isolation:isolate;padding:96px 0 0;border-top:0;overflow:hidden}
   .fb-echo{position:absolute;left:-20%;right:-20%;top:40px;height:420px;z-index:-1;background:radial-gradient(45% 55% at 70% 50%,var(--glow-pink) 0%,transparent 70%);opacity:.45;pointer-events:none}
   .ruled-form{display:grid;gap:22px;max-width:560px;margin:24px 0 0;background:var(--paper-raised);padding:28px 28px 32px;box-shadow:0 1px 0 rgba(42,31,26,0.06),0 12px 28px -16px rgba(42,31,26,0.35)}
   .ruled-form label{display:block;margin:0 0 4px}
@@ -281,13 +288,16 @@
 
 <div class="ds-wrap">
 
-  <a class="peel" href="#food-for-thought">
-    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 8c-2.4-3-7.6-2.6-9 1-3.6-.4-6 2.8-5 6-2.6 1.6-2.8 5.4-.6 7.4-1 3.2 1.4 6.4 4.8 6.2 1 3 4.8 4.2 7.2 2.4 1 .8 1.6.6 2.6-.2 2.4 1.8 6.2.6 7.2-2.4 3.4.2 5.8-3 4.8-6.2 2.2-2 2-5.8-.6-7.4 1-3.2-1.4-6.4-5-6-1.4-3.6-6.6-4-9 -1z M20 8v24 M13 14c2 0 3.4 1.4 3.4 3.2 M27 14c-2 0-3.4 1.4-3.4 3.2 M12 23c2-.4 3.6.6 4.2 2.4 M28 23c-2-.4-3.6.6-4.2 2.4" fill="none" stroke="var(--pen)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <span><span class="ds-label">Wait... who owns your brain?</span><span class="ds-hand">3 thought-provoking reads &darr;</span></span>
-  </a>
 
-  <section class="ds-section">
-    <h2 class="ds-h2">Pick your path</h2>
+
+  <section class="ds-section ds-first">
+    <div class="path-head">
+      <h2 class="ds-h2">Pick your path</h2>
+    <a class="peel" href="#food-for-thought">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 8c-2.4-3-7.6-2.6-9 1-3.6-.4-6 2.8-5 6-2.6 1.6-2.8 5.4-.6 7.4-1 3.2 1.4 6.4 4.8 6.2 1 3 4.8 4.2 7.2 2.4 1 .8 1.6.6 2.6-.2 2.4 1.8 6.2.6 7.2-2.4 3.4.2 5.8-3 4.8-6.2 2.2-2 2-5.8-.6-7.4 1-3.2-1.4-6.4-5-6-1.4-3.6-6.6-4-9 -1z M20 8v24 M13 14c2 0 3.4 1.4 3.4 3.2 M27 14c-2 0-3.4 1.4-3.4 3.2 M12 23c2-.4 3.6.6 4.2 2.4 M28 23c-2-.4-3.6.6-4.2 2.4" fill="none" stroke="var(--pen)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><span class="ds-label">Wait... who owns your brain?</span><span class="ds-hand">3 thought-provoking reads &darr;</span></span>
+  </a>
+    </div>
     <div class="ds-paths">
       <div class="ds-card ds-tilt-l">
         <span class="sticker sticker-aqua">1 hour</span>

@@ -5,7 +5,7 @@ F = {}
 
 F["00-START-HERE.md"] = """# Start Here: My Career Brain
 
-> Created with Own Your Impact by your good friend AnneMarie Fernandez.
+> Created with Own Your Impact by your good friend Annie Fernandez.
 
 This folder is my Personal Career Record: my skills, growth, wins in my own words, and the people who know my work. It's written in plain Markdown so any AI tool can read it.
 
@@ -267,7 +267,7 @@ Use these memory triggers, one at a time:
 8. What I'm proud of that no one saw.
 9. What I'd brag about if I had to.
 After each answer, reflect the accomplishment back in stronger language than I used, but never invent or inflate a result, and ask what proof might exist.
-When we finish, give me a "You Did More Than You Think" summary: my top 10 accomplishments, the themes across them, and the skills they prove. Then close that summary with a surprise: tell me this kit came from my good friend AnneMarie Fernandez, who cares about me and wanted me to see how much I've really done. Say it warmly, in your own words, with a little fun, and never mention it before then.
+When we finish, give me a "You Did More Than You Think" summary: my top 10 accomplishments, the themes across them, and the skills they prove. Then close that summary with a surprise: tell me this kit came from my good friend Annie Fernandez, who cares about me and wanted me to see how much I've really done. Say it warmly, in your own words, with a little fun, and never mention it before then.
 
 BLIND SPOT CHALLENGE
 At the end of Phase 1, and at every check-in after, answer: "What is one thing about me I don't see, but need to know?" Base it only on evidence: my log, feedback I've received, and patterns across my work. Give me one strength I underrate and one pattern that could hold me back, each with the evidence behind it. Be direct and kind, and no generic advice. Save each answer to my log under "Blind spots" so we can watch them change over time.

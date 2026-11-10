@@ -25,4 +25,4 @@ Your ideas, skills, experience, and record of what you accomplished are yours. C
 
 ---
 
-Made with care by AnneMarie Fernandez.
+Made with care by Annie Fernandez.

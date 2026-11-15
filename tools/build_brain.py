@@ -41,7 +41,6 @@ Putting something in a Markdown file or a personal AI doesn't make it mine. What
 - `07-directions.md` – career directions I'm exploring and what I'm testing.
 - `08-prompts/` – every prompt from the kit, ready to reuse.
 - `09-personal/` – optional: goals, life admin, side projects.
-- `10-decisions.md` – decisions I influenced, and what happened.
 - `food-for-thought.md` – three reads on who owns your professional memory.
 
 ## Instructions for any AI reading this folder
@@ -288,7 +287,7 @@ PHASE 3: ONGOING AGENT (every time I return)
 - Ask 3-5 quick questions about the last week or two: what I shipped, fixed, led, learned, or got thanked for, and where the evidence lives.
 - Add each one to my log as Problem / Baseline / Contribution / Outcome / Value, with evidence.
 - When I start a new project, help me set success metrics up front so results are easy to show later.
-- Keep my decision log: when someone acts on my recommendation, log the date, the decision, my input, and who acted on it. After 30-90 days, ask me what happened and add the outcome.
+- When someone acts on my recommendation, log it as a Judgment-lens win. After 30-90 days, ask me what happened and add the outcome.
 - Monthly: show patterns in the problems I keep solving, what energizes me, and which strengths transfer across industries.
 - Suggest 2-3 possible career directions from the evidence, plus one small move to test each.
 - Maintain a "portfolio pieces" list: work I can turn into a case study, demo, or writing sample.
@@ -320,7 +319,7 @@ Send me a digest with these sections:
 2. Recognition: who thanked or praised me, when, and what for.
 3. Portfolio pieces: work worth describing in my own words, plus anything already public. Never copy confidential or company-owned files.
 4. Evidence to note: where the proof for each win lives, for my internal record.
-5. Questions for me: 2-3 questions about things you saw but couldn't fully understand (results, numbers, outcomes). Always include: "What did someone decide or change because of your input this week?" Add my answer to my decision log.
+5. Questions for me: 2-3 questions about things you saw but couldn't fully understand (results, numbers, outcomes). Always include: "What did someone decide or change because of your input this week?" Log my answer as a Judgment-lens win.
 6. Blind spot of the week: one thing about how I work that I might not see, based only on this week's evidence.
 7. Two versions: an INTERNAL impact-internal-YYYY-MM-DD.md with full detail for my work Project, and a PERSONAL wins-YYYY-MM-DD.md with my skills and wins in my own words and nothing confidential. Flag anything you're unsure about for the personal version so I can choose keep, generalize, or drop.
 
@@ -451,18 +450,9 @@ Rules:
 - Blind Spot Challenge: What is one thing about me I don't see, but need to know? Use only evidence from my files.
 """
 
-F["10-decisions.md"] = """# Decision Log
-
-Influence is the hardest work to prove because the payoff shows up later. When someone acts on your recommendation, add a line. Come back in 30 to 90 days and fill in what happened. Personal version: no customer names, no internal project names, no nonpublic numbers.
-
-| Date | Decision | My input | Who acted on it | What happened (30-90 days later) |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-"""
-
 F["08-prompts/07-put-a-number-on-it.md"] = """# Put a Number on It
 
-Most work never shows up on a dashboard, but you can still give it a credible number. Pick a lens, count what you can, estimate the rest honestly, and label how sure you are.
+Most work never shows up on a dashboard, but you can still give it a credible number. Pick a lens, count what you can, estimate the rest honestly, and label how sure you are. The three prompts below are for when you need them, not a schedule.
 
 ## Six impact lenses
 
@@ -474,6 +464,8 @@ Most work never shows up on a dashboard, but you can still give it a credible nu
 | Risk | What didn't go wrong because of you? | Issues caught, escalations prevented, deadlines held | Caught 6 pricing errors before customers saw them |
 | Reach | Who relied on it? | Teams, people, managers, clients served | Template used by 5 teams across 2 regions |
 | Judgment | What couldn't be templated or handed off? | Decisions influenced, recommendations adopted | Recommended the vendor switch leadership approved |
+
+*Lenses adapted from Christian Lovell's advice on proxy metrics.*
 
 ## Napkin math, shown
 
@@ -488,7 +480,7 @@ Example: 20 minutes × 8 people × 2 times a week × 40 weeks = about 213 hours 
 
 An honest estimate holds up in a review. One inflated number makes a reviewer doubt all the others. Exact figures go in your internal record; your personal record gets rounded, generalized versions.
 
-## Count It For Me (once a quarter, about 20 minutes)
+## Count It For Me (before a review or promotion case, about 20 minutes)
 ```
 COUNT IT FOR ME
 Search my connected tools (calendar, sent mail, Slack or Teams, files) for the last 90 days. Count the recurring work I do and group it by category: meetings I ran, reviews or approvals I gave, requests I answered, documents I created, fixes or escalations I handled, people I onboarded or trained.
@@ -508,8 +500,8 @@ If a tool isn't connected, give me the exact search to run in that app and wait 
 If I disappeared for two weeks with no handoff, what would break, slow down, or go wrong, and who would notice first? Ask me one question at a time about my recurring work, the people who come to me, and the things I check that no one else does. Then turn each answer into a win with its lens (Reach or Risk), a proxy metric, and a confidence label.
 ```
 
-## Decision log
-When someone acts on your recommendation, add a row to `10-decisions.md`: date, decision, your input, who acted on it. Fill in what happened 30 to 90 days later.
+## Decisions count too
+When someone acts on your recommendation, log it as a win under the Judgment lens. Come back in 30 to 90 days and add what happened.
 
 ## The skeptical-manager check (before any review, promotion case, or resume)
 ```

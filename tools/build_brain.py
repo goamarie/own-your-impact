@@ -41,6 +41,7 @@ Putting something in a Markdown file or a personal AI doesn't make it mine. What
 - `07-directions.md` – career directions I'm exploring and what I'm testing.
 - `08-prompts/` – every prompt from the kit, ready to reuse.
 - `09-personal/` – optional: goals, life admin, side projects.
+- `10-decisions.md` – decisions I influenced, and what happened.
 - `food-for-thought.md` – three reads on who owns your professional memory.
 
 ## Instructions for any AI reading this folder
@@ -63,6 +64,7 @@ Active journaling, not hoarding: a few lines a week with context, in my own word
 - Baseline (generalized if needed):
 - My contribution:
 - Outcome:
+- Impact lens + number: (volume, frequency, time, risk, reach, or judgment) / Measured, Estimated, or Reported
 - Business value:
 - Who noticed:
 - Evidence: where it's verified (kept at work, or public/authorized items in 03-proof/)
@@ -95,6 +97,12 @@ F["02-wins/_TEMPLATE-win.md"] = """# Win: [short title]
 *(Generalize anything confidential.)*
 ## My contribution
 ## Outcome
+## Impact lens and number
+*(Lens: volume, frequency, time, risk, reach, or judgment.)*
+- Number:
+- How sure: Measured / Estimated / Reported
+- Math, if estimated: (minutes each time × people × times per week × weeks)
+*(Exact figures stay in your internal record. Round and generalize here.)*
 ## Business value
 ## Evidence
 *(Where it's verified. Detailed proof stays in approved work systems.)*
@@ -226,9 +234,9 @@ Run this in order. Ask one question at a time, keep me moving, and tell me which
    d) Who thanked me, and for what.
    When I say "it was just..." or "everyone does that," push back and dig for the impact. Reflect each win back in stronger language than I used, but never invent or inflate a result.
 
-4. FIND THE VALUE AND THE EVIDENCE (11 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, help me find credible signals: time saved, errors avoided, people unblocked, decisions made faster. Use what you found in step 2, and search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
+4. FIND THE VALUE AND THE EVIDENCE (11 min): For each win, help me name the business problem, the baseline before I started, and the outcome. If there's no dashboard, put a number on it through one of six lenses: volume (how much), frequency (how often), time (hours saved), risk (problems prevented), reach (who relied on it), or judgment (decisions I influenced, work no one else could do). Count from what you found in step 2 where you can. Where you can't, estimate with the math shown (minutes × people × times per week × weeks), and label each number Measured, Estimated, or Reported. Never round up. Search again for any win that still has no proof. Tell me where the rest most likely lives and how to verify it through approved channels.
 
-5. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome / Business value / Evidence and where it's verified.
+5. TOP 5 WINS (10 min): Write my five strongest wins as: Problem or opportunity / Baseline / My contribution / Outcome (with its lens, number, and label) / Business value / Evidence and where it's verified.
 
 6. BLIND SPOT (5 min): Answer "What is one thing about me I don't see, but need to know?" using only what I told you and what you found: one strength I underrate and one pattern to watch, each with the evidence. Be direct and kind.
 
@@ -273,13 +281,14 @@ BLIND SPOT CHALLENGE
 At the end of Phase 1, and at every check-in after, answer: "What is one thing about me I don't see, but need to know?" Base it only on evidence: my log, feedback I've received, and patterns across my work. Give me one strength I underrate and one pattern that could hold me back, each with the evidence behind it. Be direct and kind, and no generic advice. Save each answer to my log under "Blind spots" so we can watch them change over time.
 
 PHASE 2: PROOF-OF-WORK HARVEST
-Turn the recall list into a gathering checklist across: recognition; performance record; work I created (descriptions, copies only where policy allows); impact (the business problem, the baseline, my contribution, the outcome, the business value, and where the evidence is verified; no dashboard? help me find credible signals: time saved, errors avoided, people unblocked); public artifacts; scope; people; admin.
+Turn the recall list into a gathering checklist across: recognition; performance record; work I created (descriptions, copies only where policy allows); impact (the business problem, the baseline, my contribution, the outcome, the business value, and where the evidence is verified; no dashboard? use the six impact lenses (volume, frequency, time, risk, reach, judgment), show the math for any estimate, and label each number Measured, Estimated, or Reported); public artifacts; scope; people; admin.
 For each item, log: what it is, what it proves, which skill it shows, and which record it belongs in (internal or personal).
 
 PHASE 3: ONGOING AGENT (every time I return)
 - Ask 3-5 quick questions about the last week or two: what I shipped, fixed, led, learned, or got thanked for, and where the evidence lives.
 - Add each one to my log as Problem / Baseline / Contribution / Outcome / Value, with evidence.
 - When I start a new project, help me set success metrics up front so results are easy to show later.
+- Keep my decision log: when someone acts on my recommendation, log the date, the decision, my input, and who acted on it. After 30-90 days, ask me what happened and add the outcome.
 - Monthly: show patterns in the problems I keep solving, what energizes me, and which strengths transfer across industries.
 - Suggest 2-3 possible career directions from the evidence, plus one small move to test each.
 - Maintain a "portfolio pieces" list: work I can turn into a case study, demo, or writing sample.
@@ -311,7 +320,7 @@ Send me a digest with these sections:
 2. Recognition: who thanked or praised me, when, and what for.
 3. Portfolio pieces: work worth describing in my own words, plus anything already public. Never copy confidential or company-owned files.
 4. Evidence to note: where the proof for each win lives, for my internal record.
-5. Questions for me: 2-3 questions about things you saw but couldn't fully understand (results, numbers, outcomes).
+5. Questions for me: 2-3 questions about things you saw but couldn't fully understand (results, numbers, outcomes). Always include: "What did someone decide or change because of your input this week?" Add my answer to my decision log.
 6. Blind spot of the week: one thing about how I work that I might not see, based only on this week's evidence.
 7. Two versions: an INTERNAL impact-internal-YYYY-MM-DD.md with full detail for my work Project, and a PERSONAL wins-YYYY-MM-DD.md with my skills and wins in my own words and nothing confidential. Flag anything you're unsure about for the personal version so I can choose keep, generalize, or drop.
 
@@ -403,7 +412,7 @@ F["08-prompts/04-recall-and-two-records.md"] = """# Recall, Check-ins, and the T
 
 F["08-prompts/05-reviews-and-careers.md"] = """# Reviews, Promotions, and Career Growth
 
-- REVIEW: My performance review is coming up for [period]. Using my log, draft my self-assessment organized by [review categories]. Lead with impact and numbers, cite the proof for each point, include one growth area. Keep it in my voice.
+- REVIEW: My performance review is coming up for [period]. Using my log, draft my self-assessment organized by [review categories]. Lead with impact and numbers, cite the proof for each point, include one growth area. Keep it in my voice. Then run the skeptical-manager check (07-put-a-number-on-it.md) on every number before I submit.
 - PROMOTION: I want to make the case for [target title or raise]. Build a one-page case: scope I already operate at, top results with numbers, evidence, and what I'd take on next. Flag gaps in proof.
 - RESUME: Draft a resume for a [target role] in [industry]. Pull the strongest, most relevant accomplishments from my personal log and rewrite them for that audience. Every bullet needs a result, and nothing confidential.
 - LINKEDIN: Write 3 headline options and an About section based on my personal log.
@@ -440,6 +449,72 @@ Rules:
 - Draft a cover letter for this role using my two most relevant wins.
 - Add this win to my log: [what happened].
 - Blind Spot Challenge: What is one thing about me I don't see, but need to know? Use only evidence from my files.
+"""
+
+F["10-decisions.md"] = """# Decision Log
+
+Influence is the hardest work to prove because the payoff shows up later. When someone acts on your recommendation, add a line. Come back in 30 to 90 days and fill in what happened. Personal version: no customer names, no internal project names, no nonpublic numbers.
+
+| Date | Decision | My input | Who acted on it | What happened (30-90 days later) |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+"""
+
+F["08-prompts/07-put-a-number-on-it.md"] = """# Put a Number on It
+
+Most work never shows up on a dashboard, but you can still give it a credible number. Pick a lens, count what you can, estimate the rest honestly, and label how sure you are.
+
+## Six impact lenses
+
+| Lens | The question | Proxy metrics | Example |
+| --- | --- | --- | --- |
+| Volume | How much do you handle? | Requests, reviews, approvals, documents, tickets | Reviewed about 40 contracts a quarter |
+| Frequency | How often, and how steadily? | Per week, recurring cadences, cycles run without a miss | Ran the weekly release check 48 weeks straight |
+| Time | Whose time did you save, and how much? | Hours saved, turnaround cut, cycle time | Cut intake triage from 3 days to 1 |
+| Risk | What didn't go wrong because of you? | Issues caught, escalations prevented, deadlines held | Caught 6 pricing errors before customers saw them |
+| Reach | Who relied on it? | Teams, people, managers, clients served | Template used by 5 teams across 2 regions |
+| Judgment | What couldn't be templated or handed off? | Decisions influenced, recommendations adopted | Recommended the vendor switch leadership approved |
+
+## Napkin math, shown
+
+time saved = minutes each time × people × times per week × weeks
+
+Example: 20 minutes × 8 people × 2 times a week × 40 weeks = about 213 hours a year.
+
+## Label every number
+- **Measured:** from a system, report, or dashboard.
+- **Estimated:** your napkin math, inputs shown.
+- **Reported:** what someone else said (a manager, a customer, a recap).
+
+An honest estimate holds up in a review. One inflated number makes a reviewer doubt all the others. Exact figures go in your internal record; your personal record gets rounded, generalized versions.
+
+## Count It For Me (once a quarter, about 20 minutes)
+```
+COUNT IT FOR ME
+Search my connected tools (calendar, sent mail, Slack or Teams, files) for the last 90 days. Count the recurring work I do and group it by category: meetings I ran, reviews or approvals I gave, requests I answered, documents I created, fixes or escalations I handled, people I onboarded or trained.
+
+Give me a table: Category / Count / Per week / Example / The exact search you used.
+Then:
+1. Flag the 3 categories that show the most demand for my role.
+2. For each one, estimate time saved or problems prevented using minutes × people × frequency. Show the math and label each number Measured, Estimated, or Reported.
+3. Tell me which numbers a skeptical manager would challenge, and what evidence would hold up.
+4. Write a PERSONAL version with rounded, generalized figures and no internal names. Ask me before keeping anything you're unsure about.
+
+If a tool isn't connected, give me the exact search to run in that app and wait for my answer.
+```
+
+## The two-weeks-gone test
+```
+If I disappeared for two weeks with no handoff, what would break, slow down, or go wrong, and who would notice first? Ask me one question at a time about my recurring work, the people who come to me, and the things I check that no one else does. Then turn each answer into a win with its lens (Reach or Risk), a proxy metric, and a confidence label.
+```
+
+## Decision log
+When someone acts on your recommendation, add a row to `10-decisions.md`: date, decision, your input, who acted on it. Fill in what happened 30 to 90 days later.
+
+## The skeptical-manager check (before any review, promotion case, or resume)
+```
+Act as a skeptical manager reviewing my impact claims below. For each number: is it Measured, Estimated, or Reported? Would you believe it? What would you push back on, and what evidence would change your mind? Then rewrite any claim that overreaches so it's still strong but fully defensible. Never inflate a result.
+```
 """
 
 os.makedirs("out", exist_ok=True)
